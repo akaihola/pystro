@@ -5,13 +5,12 @@ import tempfile
 
 setup(
     name='pystro',
-    version='1.0',
+    version=__import__('pystro').__version__,
     description='Python string manipulation library',
     author='Antti Kaihola',
     author_email='akaihol+pystro@ambitone.com',
-    packages=[
-        'pystro',
-    ],
+    packages=['pystro'],
+    py_modules=['pystro.specialchars', 'pystro.itertools'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
